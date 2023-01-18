@@ -37,23 +37,18 @@ public class SyntaxTypesVariables {
 
         int d  = 3;
         int e = 4;
-        e *=d;
+        System.out.println(e *=d);
         
         int f = 10;
         int g = 2;
-        f /= g;
-        g -= f;
+        System.out.println(f /= g);
+        System.out.println(g -= f);
+
+        int maxInteger = Integer.MAX_VALUE;
+        System.out.println(++maxInteger);
 
 
 
-
-
-
-            
-
-
-
-        
 
     }
 }
