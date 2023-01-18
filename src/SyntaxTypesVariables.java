@@ -18,15 +18,40 @@ public class SyntaxTypesVariables {
         System.out.println(myNumber);
 
         int a = 5;
-        System.out.println(a++);
-        System.out.println(a);
+        System.out.println(a++); //5
+        System.out.println(a); //6
 
         int b = 5;
-        System.out.println(++b);
-        System.out.println(b);
+        System.out.println(++b); //6
+        System.out.println(b); //6
 
+        System.out.println("test: ");
 
+        // String theNumberThree = "three";
+        // Object o = theNumberThree;
+        // int three = (int) o;
+        // cannot cast an int to a string; 
+
+        int c = 4;
+        System.out.println(c +=5);
+
+        int d  = 3;
+        int e = 4;
+        e *=d;
         
+        int f = 10;
+        int g = 2;
+        f /= g;
+        g -= f;
+
+
+
+
+
+
+            
+
+
 
         
 
