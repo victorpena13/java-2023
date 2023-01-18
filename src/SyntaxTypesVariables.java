@@ -45,7 +45,9 @@ public class SyntaxTypesVariables {
         System.out.println(g -= f);
 
         int maxInteger = Integer.MAX_VALUE;
-        System.out.println(++maxInteger);
+        System.out.println(++maxInteger); // -2147483648
+        
+        
 
 
 
