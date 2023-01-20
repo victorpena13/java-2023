@@ -56,8 +56,11 @@ public class SyntaxTypesVariables {
         int userLength = scanner.nextInt();
         System.out.print("enter width: ");
         int userWidth = scanner.nextInt();
+        
 
-        System.out.println("your perimeter: " + parseInt(userLength+userLength+userWidth+userWidth));
+    
+
+        System.out.println("your perimeter: " + (userLength+userLength+userWidth+userWidth));
         
         
 
