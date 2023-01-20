@@ -53,15 +53,16 @@ public class SyntaxTypesVariables {
         System.out.println(++maxInteger); // -2147483648
 
         System.out.print("enter length: ");
-        int userLength = scanner.nextInt();
+        float userLength = scanner.nextFloat();
         System.out.print("enter width: ");
-        int userWidth = scanner.nextInt();
+        float userWidth = scanner.nextFloat();
         
 
         System.out.println("your perimeter of rectangle/square: " + (userLength+userLength+userWidth+userWidth));
         System.out.println("Area of rectangle/square:" + (userLength * userWidth));
 
-        
+
+
         
         
 
