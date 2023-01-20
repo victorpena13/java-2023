@@ -58,9 +58,10 @@ public class SyntaxTypesVariables {
         int userWidth = scanner.nextInt();
         
 
-    
+        System.out.println("your perimeter of rectangle/square: " + (userLength+userLength+userWidth+userWidth));
+        System.out.println("Area of rectangle/square:" + (userLength * userWidth));
 
-        System.out.println("your perimeter: " + (userLength+userLength+userWidth+userWidth));
+        
         
         
 
