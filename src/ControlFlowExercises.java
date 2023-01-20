@@ -9,6 +9,14 @@ public class ControlFlowExercises {
             a++;
         }
 
+        int b = 0; 
+
+        do {
+            System.out.println(b);
+            b+=2;
+
+        } while(b<=100);
+
     }
     
 }
