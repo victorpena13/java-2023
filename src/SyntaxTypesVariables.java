@@ -1,5 +1,10 @@
+import java.util.Scanner;
+
 public class SyntaxTypesVariables {
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
         int myFavoriteNumber = 13; 
         System.out.println(myFavoriteNumber);
 
@@ -46,6 +51,13 @@ public class SyntaxTypesVariables {
 
         int maxInteger = Integer.MAX_VALUE;
         System.out.println(++maxInteger); // -2147483648
+
+        System.out.print("enter length: ");
+        int userLength = scanner.nextInt();
+        System.out.print("enter width: ");
+        int userWidth = scanner.nextInt();
+
+        System.out.println("your perimeter: " + parseInt(userLength+userLength+userWidth+userWidth));
         
         
 
