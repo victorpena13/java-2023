@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
@@ -45,6 +47,31 @@ public class ControlFlowExercises {
         }
         e++;
        } while(e<=100);
+
+
+
+    //    System.out.printf("%1$4s %2$10s %3$10s%n", "number", "squared", "cubed");
+
+    String yesNo;
+
+    do{
+        System.out.print("what number would you like to go up to: ");
+        Scanner scanner = new Scanner(System.in);
+        int userInt = scanner.nextInt();
+        System.out.printf("|%15s| %15s| %15s|%n", "number", "squared", "cubed");
+        for(int i=0;i<=userInt;i++) {
+            System.out.printf("|%15s|%n", i);
+        }
+        
+
+        System.out.println("your int: " + userInt);
+        System.out.print("would you like to continue;");
+        yesNo = scanner.next();
+    } while(yesNo.equalsIgnoreCase("yes") || yesNo.equalsIgnoreCase("y"));
+
+
+
+
 
     }
     
