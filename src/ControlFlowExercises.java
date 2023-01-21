@@ -58,19 +58,15 @@ public class ControlFlowExercises {
         System.out.print("what number would you like to go up to: ");
         Scanner scanner = new Scanner(System.in);
         int userInt = scanner.nextInt();
-        System.out.printf("|%15s| %15s| %15s|%n", "number", "squared", "cubed");
-        for(int i=0;i<=userInt;i++) {
-            System.out.printf("|%15s|%n", i);
+        System.out.printf("%15s| %15s| %15s|%n", "number", "squared", "cubed");
+        for(int i=1, j=1, k=1;i<=userInt;i++, j++, k++) {
+            System.out.printf("%15s| %15s| %15s|%n", i, j*j, (k*k)*k);
         }
-        
 
         System.out.println("your int: " + userInt);
         System.out.print("would you like to continue;");
         yesNo = scanner.next();
     } while(yesNo.equalsIgnoreCase("yes") || yesNo.equalsIgnoreCase("y"));
-
-
-
 
 
     }
