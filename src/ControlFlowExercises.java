@@ -1,9 +1,9 @@
+import java.nio.file.attribute.UserPrincipal;
+import java.rmi.StubNotFoundException;
 import java.util.Scanner;
 
 public class ControlFlowExercises {
-
     public static void main(String[] args) {
-
         int a = 5;
 
         while(a<=15) {
@@ -62,13 +62,38 @@ public class ControlFlowExercises {
         for(int i=1, j=1, k=1;i<=userInt;i++, j++, k++) {
             System.out.printf("%15s| %15s| %15s|%n", i, j*j, (k*k)*k);
         }
-
         System.out.println("your int: " + userInt);
         System.out.print("would you like to continue;");
         yesNo = scanner.next();
     } while(yesNo.equalsIgnoreCase("yes") || yesNo.equalsIgnoreCase("y"));
 
+    
+    String continueYesNo;
+
+    do {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("enter a numerical grade from 0 to 100: ");
+        int userInt = scanner.nextInt();
+        if(userInt >= 88 && userInt <= 100) {
+            System.out.println("A");
+        } else if (userInt>=80 && userInt <= 87) {
+            System.out.println("B");
+        } else if (userInt>=67 && userInt <=79) {
+            System.out.println("b");
+        }
+     
+
+
+
+        System.out.print("would you like to continue: ");
+        continueYesNo = scanner.next();
+
+    } while(continueYesNo.equalsIgnoreCase("yes") || continueYesNo.equalsIgnoreCase("y"));
+
+
 
     }
-    
+
+
 }
