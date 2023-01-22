@@ -80,12 +80,13 @@ public class ControlFlowExercises {
         } else if (userInt>=80 && userInt <= 87) {
             System.out.println("B");
         } else if (userInt>=67 && userInt <=79) {
-            System.out.println("b");
-        }
-     
-
-
-
+            System.out.println("C");
+        } else if (userInt>=60&& userInt <=66) {
+            System.out.println("D");
+        } else if (userInt<=59) {
+            System.out.println("F");
+        } 
+    
         System.out.print("would you like to continue: ");
         continueYesNo = scanner.next();
 
