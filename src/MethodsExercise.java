@@ -27,7 +27,18 @@ public class MethodsExercise {
             System.out.println(x % y);
 
         }
-    
+    }
+
+    public static int multiplicationRecursion(int x, int y) {
+        if(y == 0 || x == 0) {
+            return 0;
+        }
+        if(y == 1) {
+            return x;
+        } else if (x == 1) {
+            return y;
+        } 
+        return x + multiplicationRecursion(x,y-1);
     }
 
     public static void main(String[] args) {
@@ -38,8 +49,8 @@ public class MethodsExercise {
         division(2, 0);
         modulus(2, 1);
         modulus(2, 0);
-
-
+        System.out.println("test");
+        System.out.println(multiplicationRecursion(2, 10));
     }
     
 }
