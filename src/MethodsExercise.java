@@ -1,4 +1,3 @@
-import java.nio.file.attribute.UserPrincipal;
 import java.util.Scanner;
 
 public class MethodsExercise {
@@ -68,6 +67,23 @@ public class MethodsExercise {
         return userInt;
     }
 
+    public static void factorial() {
+        int min =1;
+        // int max =10;
+        // int userResult = getInteger(min, max);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("enter a number 1 through 10: ");
+        int userInt = scanner.nextInt();
+        
+        for(int i = min; i<=userInt; i++) {
+            System.out.print(i + "! = ");
+            for(int j = 1; j<=i; j++) {
+                System.out.print(" x " + j + "\n");
+            }
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println(addition(2, 2));
         System.out.println(subtraction(3,1));
@@ -80,6 +96,7 @@ public class MethodsExercise {
         System.out.println(multiplicationRecursion(2, 10));
         System.out.println(multiplicationLoop(5,5));
         System.out.println(getInteger(1, 20));
+        factorial();
     }
     
 }
