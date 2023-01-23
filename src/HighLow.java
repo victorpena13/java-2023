@@ -11,12 +11,19 @@ public class HighLow {
 
         // int userGuess;
         int randomNumber = randomNumber();
-
+        int count = 0;
         do{
             System.out.println(randomNumber);
             System.out.print("guess the number between 1 and 100: ");
             int userInt = scanner.nextInt();
-            if(randomNumber == userInt) {
+            if(userInt < randomNumber) {
+                System.out.println("higher");
+                count++;
+            } else if(userInt > randomNumber) {
+                System.out.println("lower");
+                count++;
+            } else if(randomNumber == userInt) {
+                System.out.println("you guessed it with " + count + " guesses");
                 return;
             }
         } while(true);
