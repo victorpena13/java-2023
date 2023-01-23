@@ -67,7 +67,7 @@ public class Methods {
         System.out.println(sayHello());
         sayHello(6);
         count(5);
-        System.out.println(getPower(2, 4));
+        System.out.println(getPower(2, 4)); // 16
     }
     
 }
