@@ -67,21 +67,31 @@ public class MethodsExercise {
         return userInt;
     }
 
-    public static void factorial() {
-        int min =1;
-        // int max =10;
-        // int userResult = getInteger(min, max);
-
+    public static long factorial() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("enter a number 1 through 10: ");
-        int userInt = scanner.nextInt();
-        
-        for(int i = min; i<=userInt; i++) {
+        System.out.println("enter a new number");
+        long n = scanner.nextInt();
+        long fact;
+        for(int i = 1; i <= n; i++) {
+            fact = 1;
             System.out.print(i + "! = ");
-            for(int j = 1; j<=i; j++) {
-                System.out.print(" x " + j + "\n");
+            for(int j = 1; j <= i; j++) {
+                System.out.print(j);
+                if (j != i) System.out.print(" x ");
+                fact = fact * j;
             }
+            System.out.println(" = " + fact);
         }
+        return n;
+    }
+
+    public static void rollDice() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("enter the number of sides for a pair of dice: ");
+        int sides = scanner.nextInt();
+        int die1 = (int)Math.floor(Math.random() * (sides - 1 + 1) + 1);
+        System.out.println(die1);
+
     }
 
     public static void main(String[] args) {
@@ -97,6 +107,7 @@ public class MethodsExercise {
         System.out.println(multiplicationLoop(5,5));
         System.out.println(getInteger(1, 20));
         factorial();
+        rollDice();
     }
-    
+
 }
