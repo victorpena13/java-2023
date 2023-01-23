@@ -29,6 +29,17 @@ public class MethodsExercise {
         }
     }
 
+    public static int multiplicationLoop(int x, int y){
+        int result =0;
+        for(int i =1; i <= y; i++) {
+            result +=x;
+        }
+        return result;
+        
+
+    }
+
+
     public static int multiplicationRecursion(int x, int y) {
         if(y == 0 || x == 0) {
             return 0;
@@ -51,6 +62,7 @@ public class MethodsExercise {
         modulus(2, 0);
         System.out.println("test");
         System.out.println(multiplicationRecursion(2, 10));
+        System.out.println(multiplicationLoop(5,5));
     }
     
 }
