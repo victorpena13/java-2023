@@ -85,14 +85,26 @@ public class MethodsExercise {
         return n;
     }
 
+    public static int randomNumber(int sides) {
+        return(int)Math.floor(Math.random() * (sides - 1 + 1) + 1);
+    } 
+
     public static void rollDice() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("enter the number of sides for a pair of dice: ");
         int sides = scanner.nextInt();
-        int die1 = (int)Math.floor(Math.random() * (sides - 1 + 1) + 1);
-        System.out.println(die1);
 
+        String yesNo;
+
+        do{
+            System.out.print("roll dice? [y/n] ");
+            yesNo = scanner.next();
+            System.out.println(randomNumber(sides) + " " + randomNumber(sides));
+    
+        } while(yesNo.equalsIgnoreCase("yes") || yesNo.equalsIgnoreCase("y"));
     }
+
+    
 
     public static void main(String[] args) {
         System.out.println(addition(2, 2));
@@ -110,4 +122,4 @@ public class MethodsExercise {
         rollDice();
     }
 
-}
+} 
