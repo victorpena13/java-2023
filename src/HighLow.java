@@ -13,7 +13,6 @@ public class HighLow {
         int randomNumber = randomNumber();
         int count = 0;
         do{
-            System.out.println(randomNumber);
             System.out.println("you have 6 guesses");
             System.out.print("guess the number between 1 and 100: ");
             int userInt = scanner.nextInt();
