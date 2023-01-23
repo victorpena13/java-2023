@@ -14,17 +14,21 @@ public class HighLow {
         int count = 0;
         do{
             System.out.println(randomNumber);
+            System.out.println("you have 6 guesses");
             System.out.print("guess the number between 1 and 100: ");
             int userInt = scanner.nextInt();
-            if(userInt < randomNumber) {
+            if(randomNumber == userInt) {
+                System.out.println("you guessed it with " + count + " guesses");
+                return;
+            } else if (count >= 5) {
+                System.out.println("you ran out of guesses. you lose.");
+                return;
+            } else if (userInt < randomNumber) {
                 System.out.println("higher");
                 count++;
             } else if(userInt > randomNumber) {
                 System.out.println("lower");
                 count++;
-            } else if(randomNumber == userInt) {
-                System.out.println("you guessed it with " + count + " guesses");
-                return;
             }
         } while(true);
     }
