@@ -13,7 +13,7 @@ public class ConsoleAdventureGame {
         } 
         System.out.print("what is your name: ");
         String username = scanner.next();
-        System.out.println("Hi " + username + " how to guide: ");
+        System.out.println("Hi " + username + "\nhow to play: ");
 
 
 
