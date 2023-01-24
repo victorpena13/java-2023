@@ -14,6 +14,14 @@ public class ConsoleAdventureGame {
         System.out.print("what is your name: ");
         String username = scanner.next();
         System.out.println("Hi " + username + "\nhow to play: ");
+        System.out.println("1 to view your stats.");
+        System.out.println("2 to display enemy stats.");
+        System.out.println("");
+
+
+        // beat high low game to beat monster
+        // guess roll dice game 
+        // get integer game 
 
 
 
