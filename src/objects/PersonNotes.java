@@ -1,3 +1,6 @@
+package objects;
+
+
 public class PersonNotes {
 
     // class - is used t o define a custom type in java. blue print for objects to be created on it. 
