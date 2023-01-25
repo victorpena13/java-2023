@@ -1,7 +1,9 @@
 package objects;
 
-public class Person {
+public class PersonNotes {
 
+
+    public static long worldPopulation = 7_500_000_000L;
     public String firstName;
     public String lastName;
 
@@ -10,7 +12,13 @@ public class Person {
     }
 
     public static void main(String[] args) {
+    
         // instance 
+
+        Person theBestDrummerAlive = new Person();
+        theBestDrummerAlive.firstName = "Travis";
+        theBestDrummerAlive.lastName = "Barker";
+
         Person rick = new Person();
         rick.firstName = "rick";
         rick.lastName = "sanchez";
