@@ -35,7 +35,7 @@ public class Person {
         System.out.println(p1.getName());  //john
         System.out.println(p3.getName()); // john
         p3.setName("jane");
-        System.out.println(p1.getName()); //john
+        System.out.println(p1.getName()); //jane
         System.out.println(p3.getName()); // jane
 
 
