@@ -1,4 +1,4 @@
-import objects.StudentNotes;
+import objectNotes.StudentNotes;
 
 public class StudentTest {
     public static void main(String[] args) {
