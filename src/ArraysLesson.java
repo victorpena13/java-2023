@@ -46,7 +46,25 @@ public class ArraysLesson {
         System.out.println(beatles[0]); // john
         System.out.println(beatles[1]); // paul
         System.out.println(beatles[2]); // ringo
+
+        // iterating: 
+
+        String[] languages = {"html", "css", "javascript", "java"};
+
+        // traditional for loop:
+        for(int i=0; i < languages.length; i+=1) {
+            System.out.println(languages[i]);
+        }
+
+        // 'for each' - for loop: 
+        for(String language : languages) {
+            System.out.println(language);
+        }
         
+        int[] numbers = {1,2,3,4,5};
+        for (int n: numbers) {
+            System.out.println(n);
+        }
 
 
     }
