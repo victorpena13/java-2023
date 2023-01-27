@@ -15,9 +15,10 @@ public class CircleApp {
         do{
             System.out.print("radius: ");
             double userRadius = input.getDouble();
-            System.out.println(userRadius);
-            System.out.print("continue ");
-            
+            Circle c2 = new Circle(userRadius);
+            System.out.println("area: " + c2.getArea());   
+            System.out.println("perimeter: " + c2.getCircumference());     
+            yesNo = input.yesNo();
             yesNo = input.yesNo();
         } while(yesNo == true);
 
