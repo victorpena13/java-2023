@@ -36,6 +36,16 @@ public class ArraysLesson {
         System.out.println(numbers[1]); //2
         System.out.println(numbers[2]); //0 - default value
         System.out.println(numbers[3]); // ArrayIndexOutOfBoundsException
+
+        // array's size and elements can both be defined when it is created with 'array initalizer syntax'.
+
+        //array initializer syntax:
+        String[] beatles = {"john", "paul", "ringo"};
+
+        System.out.println(beatles.length); //3
+        System.out.println(beatles[0]); // john
+        System.out.println(beatles[1]); // paul
+        System.out.println(beatles[2]); // ringo
         
 
 
