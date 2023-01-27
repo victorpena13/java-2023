@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArraysLesson {
 
     //arrays - an object that contain zero or more items called elements.
@@ -13,11 +15,11 @@ public class ArraysLesson {
         // length must be defined when 
         prices = new double[4];
 
-        final int NUMBER_OF_BEATLES = 4;
+        // final int NUMBER_OF_BEATLES = 4;
         // BandMember[] theBeatles = new BandMember[NUMBER_OF_BEATLES];
 
-        int numberOfBugs = (int) Math.floor(Math.random() * 100);
-        Bug[] myCode = new Bug[numberOfBugs];
+        // int numberOfBugs = (int) Math.floor(Math.random() * 100);
+        // Bug[] myCode = new Bug[numberOfBugs];
 
         // elements of an array are defined by their index.
         // their position in the array, starting at 0
@@ -28,14 +30,14 @@ public class ArraysLesson {
         // character = \0(zero)
         // object = null
 
-        int[] numbers = new int[3];
-        numbers[0] = 1;
-        numbers[1] = 2;
+        int[] nums = new int[3];
+        nums[0] = 1;
+        nums[1] = 2;
 
-        System.out.println(numbers[0]); //1
-        System.out.println(numbers[1]); //2
-        System.out.println(numbers[2]); //0 - default value
-        System.out.println(numbers[3]); // ArrayIndexOutOfBoundsException
+        System.out.println(nums[0]); //1
+        System.out.println(nums[1]); //2
+        System.out.println(nums[2]); //0 - default value
+        // System.out.println(nums[3]); // ArrayIndexOutOfBoundsException
 
         // array's size and elements can both be defined when it is created with 'array initalizer syntax'.
 
@@ -66,7 +68,11 @@ public class ArraysLesson {
             System.out.println(n);
         }
 
-
+        //java.util.Arrays - methods: 
+        Arrays.fill(numbers, 1);
+        for(int n: numbers) {
+            System.out.println(n);
+        }
     }
     
 }
