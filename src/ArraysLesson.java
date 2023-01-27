@@ -52,7 +52,7 @@ public class ArraysLesson {
         // iterating: 
 
         String[] languages = {"html", "css", "javascript", "java"};
-
+        String[] languagesTwo = {"html", "css", "javascript", "java"};
         // traditional for loop:
         for(int i=0; i < languages.length; i+=1) {
             System.out.println(languages[i]);
@@ -64,6 +64,7 @@ public class ArraysLesson {
         }
         
         int[] numbers = {1,2,3,4,5};
+        int[] numbersTwo = {1,2,3,4,5};
         for (int n: numbers) {
             System.out.println(n);
         }
@@ -73,6 +74,29 @@ public class ArraysLesson {
         for(int n: numbers) {
             System.out.println(n);
         }
+        // result: 
+        // 1
+        // 1
+        // 1
+        System.out.println(Arrays.equals(languages, languagesTwo)); // true
+
+        System.out.println(languages.length); // 4
+        System.out.println(Arrays.copyOf(languages, 6));
+
+        int[] original = new int[] {1,2,3};
+        System.out.println("original array: ");
+        for(int i = 0; i < original.length; i++) {
+            System.out.print(original[i] + " ");
+        }
+
+        int[] copy = Arrays.copyOf(original, 5);
+        System.out.println("\nNew array copy of original: ");
+        for(int i = 0; i < copy.length; i++) {
+            System.out.print(copy[i] + " ");
+        }
+
+    
+
     }
     
 }
