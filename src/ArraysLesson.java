@@ -95,8 +95,36 @@ public class ArraysLesson {
             System.out.print(copy[i] + " ");
         }
 
-    
+        String test = Arrays.toString(numbers);
+        System.out.println(test);
+        
+        // two-dimensional arrays: 
+        int[][] matrix = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        };
 
+
+        // access the first element in the second row
+        System.out.println(matrix[1][0]); // 4
+        // the last element in the first row
+        System.out.println(matrix[0][2]); //3
+        // the first element in the last row
+        System.out.println(matrix[2][0]);
+
+        for (int[] row : matrix) {
+            System.out.println("+---+---+---+");
+        
+            System.out.print("| ");
+        
+            for (int n : row) {
+                System.out.print(n + " | ");
+            }
+        
+            System.out.println();
+        }
+        
+        System.out.println("+---+---+---+");
     }
-    
 }
