@@ -30,8 +30,8 @@ public class EmployeeNotes extends PersonNotes{
 
     //instances of the PersonNotes class do not have access to the salary property
     //or the doWork,getSalary,setSalary methods
-    public void doWork() {
-        System.out.println("work, work...");
+    public String doWork() {
+        return "work, work...";
     }
 
     public double getSalary() {

@@ -21,8 +21,8 @@ public class SuperHero extends PersonNotes {
 
     public static void main(String[] args) {
         SuperHero theManOfSteel = new SuperHero("clark", "kent", "superman");
-        System.out.println(theManOfSteel.getSecretIdentity());
-        System.out.println(theManOfSteel.getName());
+        System.out.println(theManOfSteel.getSecretIdentity()); // clark kent
+        System.out.println(theManOfSteel.getName()); // super man
     }
 
     
