@@ -26,6 +26,10 @@ public class PersonNotes {
 
     }
 
+    public String getName() {
+        return this.firstName + " " + this.lastName;
+    }
+
     //overloaded constructor:
     public PersonNotes(String firstname, String lastname) {
         // 'this' keyword provides us a way to refer to the current instnace. 'this object'.

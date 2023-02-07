@@ -12,6 +12,11 @@ public class EmployeeNotes extends PersonNotes{
         super(firstName, lastName);
     }
 
+    public String getName() {
+        // i can reach the field firstName from the superclass PersonNotes because the field is protected. 
+        return this.firstName;
+    }
+
     //overriding:
     //override methods on the superclass. 
     //to do so. subclass must define a method with the same name, return type, and parameters as in the superclass. 
@@ -36,6 +41,8 @@ public class EmployeeNotes extends PersonNotes{
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+
 
 
 
