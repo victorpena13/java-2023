@@ -17,8 +17,9 @@ public class EmployeeNotes extends PersonNotes{
     //to do so. subclass must define a method with the same name, return type, and parameters as in the superclass. 
     //this allows the subclass to implement its own interpretation.
     //example:
-    public void sayHello() {
-        System.out.println("How can i help you");
+    //sayHello overrides the sayhello of superclass PersonNotes
+    public String sayHello() {
+        return "How can i help you";
     }
 
 
@@ -43,6 +44,8 @@ public class EmployeeNotes extends PersonNotes{
         // because EmployeeNotes extends/inherits PersonNotes. we can use the sayHello method, person constructor and name properties. 
         EmployeeNotes john = new EmployeeNotes("john", "smtih");
         john.sayHello();
+        john.setAge(22);
         System.out.println(john.firstName + " " + john.lastName);
+        System.out.println(john.getAge());
     }
 }

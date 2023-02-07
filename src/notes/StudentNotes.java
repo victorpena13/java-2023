@@ -41,5 +41,8 @@ public class StudentNotes {
     public static void main(String[] args) {
         StudentNotes s1 = new StudentNotes("Student A");
         StudentNotes s2 = new StudentNotes("student b", "voyagers");
+        EmployeeNotes e1 = new EmployeeNotes("victor", "pena");
+        e1.setAge(23);
+        System.out.println(e1.getAge());
     }
 }

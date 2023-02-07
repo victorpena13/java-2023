@@ -11,8 +11,9 @@ public class PersonNotes {
     //static variable: 
     public static long worldPopulation = 7_500_000_000L;
     //instance variables:
-    public String firstName; 
-    public String lastName;
+    protected String firstName; 
+    protected String lastName;
+    private int age;
 
         //Constructor: 
     // - a special method that is called when an object is being created. 
@@ -42,6 +43,14 @@ public class PersonNotes {
     }
     // sayHello method referenes instance variables had we defined those same field in method it would refernce variables and not the fields
 
+
+    public int getAge() {
+        return this.age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
     public static void main(String[] args) {
 
         PersonNotes rick = new PersonNotes();
