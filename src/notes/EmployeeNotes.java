@@ -27,6 +27,13 @@ public class EmployeeNotes extends PersonNotes{
         return "How can i help you";
     }
 
+    // the 'final' keyword used to prevent reassignment,
+    // prevent inheritance or overriding.
+    // can also be used with method parameters, like with variables, to prevent reassignemnt
+    public final String onClock() {
+        return "yes i work here";
+    }
+
 
     //instances of the PersonNotes class do not have access to the salary property
     //or the doWork,getSalary,setSalary methods

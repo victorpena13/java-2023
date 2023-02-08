@@ -1,6 +1,7 @@
 package movies;
 
-public class Movie {
+// class can not be inherited from. 
+public final class Movie {
 private String name;
 private String category;
 
