@@ -16,4 +16,12 @@ public class Rectangle {
     public void setWidth(double width) {
         this.width = width;
     }
+
+    public double getArea() {
+        return length * width;
+    }
+
+    public double getPerimeter() {
+        return (2*length)+(2*width);
+    }
 }
