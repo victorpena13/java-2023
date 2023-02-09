@@ -1,21 +1,12 @@
 package shapes;
 
-public class Rectangle {
-    protected double length;
-    protected double width;
+public class Rectangle extends Quadrilateral  {
+
 
     public Rectangle(double length, double width){
-        this.length = length;
-        this.width = width;
+        super(length, width);
     }
     
-    public void setLength(double length) {
-        this.length = length;
-    }
-
-    public void setWidth(double width) {
-        this.width = width;
-    }
 
     public double getArea() {
         return length * width;
